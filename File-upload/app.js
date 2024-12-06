@@ -1,3 +1,15 @@
+
+/**
+ * This code sets up an Express.js server that allows users to upload image files.
+ * 
+ * Key Features:
+ * - Uses CORS to enable cross-origin requests.
+ * - Configures Multer for handling file uploads, storing them in an "Images" directory.
+ * - Ensures the "Images" directory exists, creating it if necessary.
+ * - Defines an endpoint (`/upload`) for uploading single files, which logs the uploaded file's metadata and returns a success message with the file path.
+ * - Serves static files from the "Images" directory, allowing access to uploaded images via a URL.
+ * - The server listens on port 3000 and logs a message when it starts successfully.
+ */
 const express = require("express");
 const app = express();
 const port = 3000;
